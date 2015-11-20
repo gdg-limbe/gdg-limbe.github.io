@@ -25,9 +25,9 @@
       -moz-border-radius: 10px 10px 10px 10px;
       -webkit-border-radius: 10px 10px 10px 10px;
     }
-/*    #page > * {
-      width: 900px;
-    }*/
+    #page > * {
+      width: inherit;
+    }
 
     #header .mdl-card__title {
       color: #fff;
@@ -35,12 +35,13 @@
       background: url('images/cover.jpg') center / cover;
     }
 
-    #header .mdl-card__title-text {
-      color: black;
+    #page > .mdl-card > .mdl-card__title .mdl-card__title-text {
+      color: white;
+      font-weight: 900;
     }
 
     .mdl-card .mdl-card__actions{
-      background-color: #104a7c;
+      background-color: #104A7C;
       text-align: center;
     }
     .mdl-card__actions .mdl-button{
@@ -54,6 +55,7 @@
     }
     #tagline {
       text-align: center;
+      line-height: 1.2em;
       font-size: 3em;
     }
     #gplus-icon {
@@ -71,292 +73,292 @@
     </style>
   </head>
   <body>
-    <div id="page">
-      <div class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" id="header">
-      
-        <div class="mdl-card__title">
-        <!--   <div>
-          <img src="images/gdglimbe_logo.png">
-        </div> -->
+    <div class="mdl-grid">
+      <div id="page" class="mdl-cell mdl-cell--11-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+        <div class="mdl-card" id="header">
+        
+          <div class="mdl-card__title">
 
-          <h2 class="mdl-card__title-text"><img src="images/gdglimbe_logo.png"></h2>
-        </div>
-        <div class="mdl-card__supporting-text" id="tagline">
-          Learn, Build and Play.
-        </div>
-        <div class="mdl-card__actions mdl-card--border">
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#about-us">
-          About Us
-          </a>
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#contacts">
-          Contacts
-          </a>
-          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#resources">
-          Resources
-          </a>
-        </div>
-        <div class="mdl-card__menu">
-          <!-- Google+ Link and Image -->
-          <a id="gplus-icon" href="https://plus.google.com/101890687253513510824" target="blank" title="Meet Us On Google+">
-          </a>
-        </div>
-    </div>
-
-
-<!-- About Us -->
-
-    <a name="about-us"></a>
-    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" >
-      
-        <div class="mdl-card__title" style="
-        background: -webkit-linear-gradient(left top, #f47e33 , white); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(bottom right, #f47e33, white); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(bottom right, #f47e33, white); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to bottom right, #f47e33 , white); /* Standard syntax */
-        ">
-
-          <h2 class="mdl-card__title-text">About Us</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">
-            Google Developer Group - Limbe (GDG Limbe) is a hands-on technical community, we have some interesting conferences, competitions, and many other creative activities.
-
-            It's a technical user group for people who are interested in Google's developer technology.
-            Are you in Limbe and will love to be in the mist of Android, App Engine and Chrome (Mobile, Cloud and Web) Hackers ? Then here is the place to come.
-
-            Teach and learn. The group is managed by volunteers, expert in many fields. And we are always happy to accept new volunteers interested to be part of the organizational team.
-
-            Disclaimer: GDG Limbe is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation.
-          </span>
-        </div>
-      </div>
-
-    <!-- Resources -->
-
-    <a name="resources"></a>
-    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" >
-      
-        <div class="mdl-card__title" style="
-        background: -webkit-linear-gradient(left top, #104a7c , white); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(bottom right, #104a7c, white); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(bottom right, #104a7c, white); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to bottom right, #104a7c , white); /* Standard syntax */
-
-        ">
-
-          <h2 class="mdl-card__title-text">Resources</h2>
-        </div>
-        <div class="mdl-card__supporting-text">
-          <span class="mdl-typography--font-light mdl-typography--subhead">
-            Below are some free resources and courses on the web we recommend for developers looking forward to growing their skills. The are categorised according to skill level.
-            <ul>
-              <li>
-                <h4>Beginner</h4>
-                <ul>
-                  <li><h5>Web</h5>
-                    <ul>
-                      <li>
-                        <a href="https://www.udacity.com/course/intro-to-computer-science--cs101">Intro to Computer Science</a> 
-                        (Online Course)
-                      </li>
-                      <li>
-                        <a href="https://www.udacity.com/course/intro-to-html-and-css--ud304">Intro to HTML and CSS</a> (Online Course)
-                      </li>
-                      <li>
-                        <a href="https://www.udacity.com/course/javascript-basics--ud804">JavaScript Basics</a> 
-                        (Online Course)
-                      </li>
-                    </ul>
-
-                  </li>
-                  <li><h5>Mobile</h5>
-                    <ul>
-                      <li>
-                        <a href="https://www.udacity.com/course/intro-to-java-programming--cs046">Intro to Java Programming</a> 
-                        (Online Course)
-                      </li>
-                      <li>
-                        <a href="https://www.udacity.com/course/android-development-for-beginners--ud837">
-                          Android Development for Beginners
-                        </a> 
-                        (Online Course)
-                      </li>
-                    </ul>
-
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <h4>Intermediate</h4>
-                <ul>
-                  <li><h5>Web</h5>
-                    <ul>
-                      <li>
-                        <a href="https://www.udacity.com/course/intro-to-jquery--ud245">Intro to jQuery</a> 
-                        (Online Course)
-                      </li>
-                      <li>
-                        <a href="https://www.udacity.com/course/html5-game-development--cs255">HTML5 Game Development</a> 
-                        (Online Course)
-                      </li>
-                      <li>
-                        <a href="https://www.udacity.com/course/website-performance-optimization--ud884">Website Performance Optimization</a> 
-                        (Online Course)
-                      </li>
-                      <li>
-                        <a href="https://developers.google.com/web/fundamentals/">Web Fundamentals</a> 
-                        (Online Resource)
-                      </li>
-                      <li>
-                        <a href="https://developers.google.com/web/fundamentals/">Material Design Lite</a> 
-                        (HTML5 Library)
-                      </li>
-                    </ul>
-                  </li>
-                  <li><h5>Mobile</h5>
-                    <ul>
-                      <li>
-                        <a href="https://www.udacity.com/course/developing-android-apps--ud853">Developing Android Apps</a> 
-                        (Online Course)
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <h4>Advanced</h4>
-                <ul>
-                  <li><h5>Web</h5>
-                    <ul>
-                      <li>
-                        <a href="https://www.udacity.com/course/javascript-design-patterns--ud989">JavaScript Design Patterns</a> 
-                        (Online Course)
-                      </li>
-                      <li>
-                        <a href="https://www.udacity.com/course/learn-backbonejs--ud990">Learn Backbone.js</a> 
-                        (HTML5 Framework)
-                      </li>
-                      <li>
-                        <a href="https://www.polymer-project.org/1.0/">Polymer</a> 
-                        (HTML5 Library)
-                      </li>
-                    </ul>
-                  </li>
-                  <li><h5>Mobile</h5>
-                    <ul>
-                      <li>
-                        <a href="https://www.udacity.com/course/advanced-android-app-development--ud855">Advanced Android App Development</a> 
-                        (Online Course)
-                      </li>
-                      <li>
-                        <a href="https://www.udacity.com/course/gradle-for-android-and-java--ud867">Gradle for Android and Java</a> 
-                        (Online Course)
-                      </li>
-                    </ul>
-                  </li>
-                </ul>  
-              </li>
-            </ul>
-          </span>
-        </div>
-    </div>
-
-
-    <!-- Contacts -->
-
-    <a name="contacts"></a>
-    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" >
-      
-        <div class="mdl-card__title" style="
-        background: -webkit-linear-gradient(left top, #2ca4b1 , white); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(bottom right, #2ca4b1, white); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(bottom right, #2ca4b1, white); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(to bottom right, #2ca4b1 , white); /* Standard syntax */
-
-        ">
-
-          <h2 class="mdl-card__title-text" >Contacts</h2>
-        </div>
-        <div class="mdl-card__supporting-text" >
-          <span class="mdl-typography--font-light mdl-typography--subhead">
-            Become a member of GDG Limbe by doing <strong>ALL</strong> the following:
-            <ol>
-              <li>
-                Fill the form below
-                <p>
-                  <iframe src="https://docs.google.com/forms/d/1bpc09YKRp5h4FAc2a5meGjCvlRw_b-QnsP3iWPzy1FY/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                </p>                
-              </li>
-              <li>Follow Us <a href="https://plus.google.com/101890687253513510824" target="blank"> On Google+ </a></li>
-            </ol>
-            
-            Below are the organizers of GDG Limbe. You can reach out to them for any inquiries or follow them on twitter.
-          </span>
+            <h2 class="mdl-card__title-text"><img src="images/gdglimbe_logo.png"></h2>
+          </div>
+          <div class="mdl-card__supporting-text" id="tagline">
+            Learn, Build and Play.
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#about-us">
+            ABOUT US
+            </a>
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#contacts">
+            CONTACTS
+            </a>
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="#resources">
+            RESOURCES
+            </a>
+          </div>
+          <div class="mdl-card__menu">
+            <!-- Google+ Link and Image -->
+            <a id="gplus-icon" href="https://plus.google.com/101890687253513510824" target="blank" title="Meet Us On Google+">
+            </a>
+          </div>
         </div>
 
-         <!-- Organizer cards start -->
-                <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/teche.jpg">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Tah Teche<br /> [Community Manager]</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">tahteche [at] gmail [dot] com </span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://twitter.com/tahteche" target="blank">
-                   <img src="images/twitter_white.png"> @tahteche
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
+
+        <!-- About Us -->
+
+        <a name="about-us"></a>
+        <div class="mdl-card" >
+          
+            <div class="mdl-card__title" style="
+            background: -webkit-linear-gradient(left top, #F05E2A , #F8A13D); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(bottom right, #F05E2A, #F8A13D); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(bottom right, #F05E2A, #F8A13D); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to bottom right, #F05E2A , #F8A13D); /* Standard syntax */
+            ">
+
+              <h2 class="mdl-card__title-text">ABOUT US</h2>
             </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">
+                Google Developer Group - Limbe (GDG Limbe) is a hands-on technical community, we have some interesting conferences, competitions, and many other creative activities.
 
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/blaise.jpg">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Kpwe Blaise<br /> [Organizer]</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">ffringel9 [at] gmail [dot] com </span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://twitter.com/ffringel" target="blank">
-                   <img src="images/twitter_white.png"> @ffringel
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
+                It's a technical user group for people who are interested in Google's developer technology.
+                Are you in Limbe and will love to be in the mist of Android, App Engine and Chrome (Mobile, Cloud and Web) Hackers ? Then here is the place to come.
+
+                Teach and learn. The group is managed by volunteers, expert in many fields. And we are always happy to accept new volunteers interested to be part of the organizational team.
+
+                Disclaimer: GDG Limbe is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation.
+              </span>
             </div>
-
-            <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/henry.jpg">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Majam Henry<br /> [Organizer]</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">ngahen2 [at] gmail [dot] com </span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://twitter.com/jksean98" target="blank">
-                   <img src="images/twitter_white.png"> @jksean98 
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
           </div>
 
-            <!-- Organizer cards end -->
+        <!-- Resources -->
+
+        <a name="resources"></a>
+        <div class="mdl-card" >
+          
+            <div class="mdl-card__title" style="
+            background: -webkit-linear-gradient(left, #F05E2A , #F8A13D); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, #F05E2A, #F8A13D); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, #F05E2A, #F8A13D); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, #F05E2A , #F8A13D); /* Standard syntax */
+
+            ">
+
+              <h2 class="mdl-card__title-text">RESOURCES</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <span class="mdl-typography--font-light mdl-typography--subhead">
+                Below are some free resources and courses on the web we recommend for developers looking forward to growing their skills. The are categorised according to skill level.
+                <ul>
+                  <li>
+                    <h4>Beginner</h4>
+                    <ul>
+                      <li><h5>Web</h5>
+                        <ul>
+                          <li>
+                            <a href="https://www.udacity.com/course/intro-to-computer-science--cs101">Intro to Computer Science</a> 
+                            (Online Course)
+                          </li>
+                          <li>
+                            <a href="https://www.udacity.com/course/intro-to-html-and-css--ud304">Intro to HTML and CSS</a> (Online Course)
+                          </li>
+                          <li>
+                            <a href="https://www.udacity.com/course/javascript-basics--ud804">JavaScript Basics</a> 
+                            (Online Course)
+                          </li>
+                        </ul>
+
+                      </li>
+                      <li><h5>Mobile</h5>
+                        <ul>
+                          <li>
+                            <a href="https://www.udacity.com/course/intro-to-java-programming--cs046">Intro to Java Programming</a> 
+                            (Online Course)
+                          </li>
+                          <li>
+                            <a href="https://www.udacity.com/course/android-development-for-beginners--ud837">
+                              Android Development for Beginners
+                            </a> 
+                            (Online Course)
+                          </li>
+                        </ul>
+
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>Intermediate</h4>
+                    <ul>
+                      <li><h5>Web</h5>
+                        <ul>
+                          <li>
+                            <a href="https://www.udacity.com/course/intro-to-jquery--ud245">Intro to jQuery</a> 
+                            (Online Course)
+                          </li>
+                          <li>
+                            <a href="https://www.udacity.com/course/html5-game-development--cs255">HTML5 Game Development</a> 
+                            (Online Course)
+                          </li>
+                          <li>
+                            <a href="https://www.udacity.com/course/website-performance-optimization--ud884">Website Performance Optimization</a> 
+                            (Online Course)
+                          </li>
+                          <li>
+                            <a href="https://developers.google.com/web/fundamentals/">Web Fundamentals</a> 
+                            (Online Resource)
+                          </li>
+                          <li>
+                            <a href="https://developers.google.com/web/fundamentals/">Material Design Lite</a> 
+                            (HTML5 Library)
+                          </li>
+                        </ul>
+                      </li>
+                      <li><h5>Mobile</h5>
+                        <ul>
+                          <li>
+                            <a href="https://www.udacity.com/course/developing-android-apps--ud853">Developing Android Apps</a> 
+                            (Online Course)
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <h4>Advanced</h4>
+                    <ul>
+                      <li><h5>Web</h5>
+                        <ul>
+                          <li>
+                            <a href="https://www.udacity.com/course/javascript-design-patterns--ud989">JavaScript Design Patterns</a> 
+                            (Online Course)
+                          </li>
+                          <li>
+                            <a href="https://www.udacity.com/course/learn-backbonejs--ud990">Learn Backbone.js</a> 
+                            (HTML5 Framework)
+                          </li>
+                          <li>
+                            <a href="https://www.polymer-project.org/1.0/">Polymer</a> 
+                            (HTML5 Library)
+                          </li>
+                        </ul>
+                      </li>
+                      <li><h5>Mobile</h5>
+                        <ul>
+                          <li>
+                            <a href="https://www.udacity.com/course/advanced-android-app-development--ud855">Advanced Android App Development</a> 
+                            (Online Course)
+                          </li>
+                          <li>
+                            <a href="https://www.udacity.com/course/gradle-for-android-and-java--ud867">Gradle for Android and Java</a> 
+                            (Online Course)
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>  
+                  </li>
+                </ul>
+              </span>
+            </div>
+        </div>
+
+
+        <!-- Contacts -->
+
+        <a name="contacts"></a>
+        <div class="mdl-card" >
+          
+            <div class="mdl-card__title" style="
+            background: -webkit-linear-gradient(left, #F05E2A , #F8A13D); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, #F05E2A, #F8A13D); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, #F05E2A, #F8A13D); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(to right, #F05E2A , #F8A13D); /* Standard syntax */
+
+            ">
+
+              <h2 class="mdl-card__title-text" >CONTACTS</h2>
+            </div>
+            <div class="mdl-card__supporting-text" >
+              <span class="mdl-typography--font-light mdl-typography--subhead">
+                Become a member of GDG Limbe by doing <strong>ALL</strong> the following:
+                <ol>
+                  <li>
+                    Fill the form below
+                    <p>
+                      <iframe src="https://docs.google.com/forms/d/1bpc09YKRp5h4FAc2a5meGjCvlRw_b-QnsP3iWPzy1FY/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                    </p>                
+                  </li>
+                  <li>Follow Us <a href="https://plus.google.com/101890687253513510824" target="blank"> On Google+ </a></li>
+                </ol>
+                
+                Below are the organizers of GDG Limbe. You can reach out to them for any inquiries or follow them on twitter.
+              </span>
+            </div>
+
+             <!-- Organizer cards start -->
+                    <div class="mdl-grid" id="organizers">
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                    <img src="images/teche.jpg">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Tah Teche<br /> [Community Manager]</h4>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <span class="mdl-typography--font-light mdl-typography--subhead">tahteche [at] gmail [dot] com </span>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://twitter.com/tahteche" target="blank">
+                       <img src="images/twitter_white.png"> @tahteche
+                       <i class="material-icons">chevron_right</i>
+                     </a>
+                  </div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                    <img src="images/blaise.jpg">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Kpwe Blaise<br /> [Organizer]</h4>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <span class="mdl-typography--font-light mdl-typography--subhead">ffringel9 [at] gmail [dot] com </span>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://twitter.com/ffringel" target="blank">
+                       <img src="images/twitter_white.png"> @ffringel
+                       <i class="material-icons">chevron_right</i>
+                     </a>
+                  </div>
+                </div>
+
+                <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media">
+                    <img src="images/henry.jpg">
+                  </div>
+                  <div class="mdl-card__title">
+                     <h4 class="mdl-card__title-text">Majam Henry<br /> [Organizer]</h4>
+                  </div>
+                  <div class="mdl-card__supporting-text">
+                    <span class="mdl-typography--font-light mdl-typography--subhead">ngahen2 [at] gmail [dot] com </span>
+                  </div>
+                  <div class="mdl-card__actions">
+                     <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://twitter.com/jksean98" target="blank">
+                       <img src="images/twitter_white.png"> @jksean98 
+                       <i class="material-icons">chevron_right</i>
+                     </a>
+                  </div>
+                </div>
+
+              </div>
+
+                <!-- Organizer cards end -->
+
+        </div>
+
+      </div>
+      <!-- Page Div -->
 
     </div>
-
-    </div>
-    <!-- Page Div -->
   </body>
 </html>
